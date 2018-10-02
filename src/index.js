@@ -5,9 +5,11 @@ module.exports = function count(s, pairs) {
     N *= pair[0] ** pair[1];
   });
 
-  if(!Number.isFinite(N)){
+  if(!Number.isFinite(N) || N > 10000000){
     return 0;
   }
+
+  console.log(N)
 
   let count = 0;
   for (let k = 0; k <= N; k++) {
