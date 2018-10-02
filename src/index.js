@@ -6,7 +6,6 @@ module.exports = function count(s, pairs) {
   });
 
   if(!Number.isFinite(N)){
-    console.log("Problemo")
     return 0;
   }
 
@@ -40,8 +39,5 @@ module.exports = function count(s, pairs) {
     return isMoreThan1GCF;
   }
 
-  console.log(count)
   return count % 1000000007;
 }
-
-module.exports('1011', [[3, 1000000000]]);
